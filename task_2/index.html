@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>RB-Christian-120140056-Tugas2-Pemweb</title>
+    </head>
+    <style>
+        * {
+            margin: 10;
+            padding: 10;
+            box-sizing: border-box;
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        #pilNominal {
+            font-weight: 1000;
+            color: #19560d;
+        }
+        #pilID {
+            color: #000000;
+        }
+        body {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            vertical-align: middle;
+            justify-content: center;
+            padding-right: 15px;
+            padding-bottom: 15px;
+            background: linear-gradient(100deg, #33D2FF, #56FF33);
+        }
+        table {
+            width: 100%;
+            border: 1;
+            vertical-align: middle;
+        }
+        tr {
+            vertical-align: middle;
+        }
+        td {
+            size: 100%;
+            text-align: center;
+            background: linear-gradient(100deg, #090979, #00d4ff);
+        }
+        img {
+            height: 150px;
+            width: 150px;
+            padding: 20px;
+        }
+        select {
+            color: #000000;
+        }
+        option {
+            color: #000000;
+        }
+        input[type=button], input[type=submit], input[type=reset] {
+            background-color: #0c2eb9d8;
+            border: none;
+            color: #ffffff;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        [type=radio] { 
+            position: absolute;
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        [type=radio] + img {
+            cursor: pointer;
+        }
+        [type=radio]:checked + img {
+            outline: 2px solid #ff0000a8;
+        }
+    </style>
+    <body>
+        <form action="http://localhost/detail.php" method="GET">
+            <table>
+                <tr>
+                    <td>
+                        <h1>120140056 Top Up Shop</h1>
+                        <p>by Christian</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    <label>
+                                        <input type="radio" id="pilGame" name="Game" value="Google Play Store">
+                                        <img src="media/gps logo.png">
+                                        <p>Google Play Store</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label>
+                                        <input type="radio" id="pilGame" name="Game" value="Mobile Legends">
+                                        <img src="media/ml logo.png">
+                                        <p>Mobile Legends</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label>
+                                        <input type="radio" id="pilGame" name="Game" value="Genshin Impact">
+                                        <img src="media/gi_logo.png">
+                                        <p>Genshin Impact</p>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        <input type="radio" id="pilGame" name="Game" value="League of Legend : Wild Rift">
+                                        <img src="media/lolwr-logo.png">
+                                        <p>LoL : Wild Rift</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label>
+                                        <input type="radio" id="pilGame" name="Game" value="Valorant">
+                                        <img src="media/v logo.png">
+                                        <p>Valorant</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label>
+                                        <input type="radio" id="pilGame" name="Game" value="Steam">
+                                        <img src="media/s logo.png">
+                                        <p>Steam</p>
+                                    </label>
+                                </td>
+                            </tr>
+                            </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>
+                            <p>Masukan ID
+                            <input type="text" id="pilID" name="ID">
+                            </p>
+                        </label>
+                        <p>Pilih Nominal Top Up
+                        <select id="pilNominal" name="TopUp">
+                            <option value="1 $">1 $</option>
+                            <option value="5 $">5 $</option>
+                            <option value="10 $">10 $</option>
+                            <option value="20 $">20 $</option>
+                            </select>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="TELUSURI">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
