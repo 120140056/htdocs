@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RB-Christian-120140056-Tugas2-Pemweb</title>
+    </head>
+    <style>
+        input[type=number] {
+            width: 1cm;
+        }
+    </style>
+    <body id="body">
+        <div id="div">
+            <h1 id="judul">Tugas Minggu 9 : Praktik Memanipulasi DOM</h1>
+            <p>1.) Membuat teks kedalam id/class html tertentu </p>
+            <form onsubmit="return false">
+                <label for="1">Masukan Judul Baru: </label>
+                <input type="text" name="1" id="1" required>
+                <button onclick="UbahJudul()">Abracadabra!</button>
+                <button onclick="NormalJudul()">Go Back</button>
+            </form><br>
+            
+            <p>2.) Membuat element html kedalam id/class html tertentu</p>
+            <form onsubmit="return false">
+                <label for="2.1">Masukan Angka 1: </label>
+                <input type="number" name="2.1" id="2.1" required>
+                <label for="2.2">Masukan Angka 2: </label>
+                <input type="number" name="2.2" id="2.2" required>
+                <button onclick="Fibonacci()">Mulai!</button>
+            </form>
+            <fieldset id="hasil">
+                <legend>Deret Fibonacci</legend>
+            </fieldset><br>
+
+            <p>3.) Membuat element yang dinamis berdasarkan event handler tertentu</p>
+            <form>
+                <label for="3">Pilih Mode: </label>
+                <select name="3" id="3" onchange="GantiTema()">
+                    <option value="terang">Mode Terang</option>
+                    <option value="gelap">Mode Gelap</option>
+                    <option value="random">Random</option>
+                </select>
+            </form>
+        </div>
+        
+        <script src="manipulator.js"></script>
+    </body>
+</html>
